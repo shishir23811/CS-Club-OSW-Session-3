@@ -24,7 +24,7 @@ int count_vowels(char *str) {
 
 int is_uppercase(char c) {
     if(c >= 'A' && c <= 'Z')
-        return 0; // BUG: should return 1
+        return 0;
     else
-        return 1; // BUG
+        return 1;
 }
