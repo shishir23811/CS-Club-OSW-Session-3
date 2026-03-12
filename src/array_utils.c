@@ -2,10 +2,10 @@
 
 int find_max(int arr[], int size) {
 
-    int max = 0;
+    int max = arr[0];
 
     for(int i = 0; i < size; i++) {
-        if(arr[i] > max)
+        if(arr[i] > max )
             max = arr[i];
     }
 
@@ -17,7 +17,7 @@ int sum_array(int arr[], int size) {
 
     int sum = 0;
 
-    for(int i = 0; i <= size; i++) {
+    for(int i = 0; i < size; i++) {
         sum += arr[i];
     }
 
@@ -31,7 +31,7 @@ int count_even(int arr[], int size) {
 
     for(int i = 0; i < size; i++) {
 
-        if(arr[i] % 2 == 1)
+        if(arr[i] % 2 == 0)
             count++;
     }
 
@@ -55,7 +55,7 @@ int reverse_number(int n) {
 int is_prime(int n) {
 
     if(n <= 1)
-        return 1;
+        return 0;
 
     for(int i = 2; i < n; i++) {
         if(n % i == 0)

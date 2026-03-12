@@ -10,3 +10,4 @@ Rules:
 
 Run tests: 
 make
+
